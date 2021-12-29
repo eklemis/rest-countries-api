@@ -4,8 +4,8 @@
 	--pad_hor_main_des: 6vw;
 	--pad_vert: 5vh;
 	--comp_height: 40px;
-	--dark_box_shadow: rgba(80, 80, 80, 0.25) 0px 15px 30px -12px;
-	--light_box_shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	--dark_box_shadow: rgba(80, 80, 80, 0.1) 0px 0px 16px;
+	--light_box_shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 	--comp_border_radius: 5px;
 	--comp_dark_color: #2b3743;
 	--comp_light_color: white;
@@ -219,6 +219,16 @@ div.country-sum {
 	row-gap: 25px;
 	border-radius: var(--comp_border_radius);
 	cursor: pointer;
+	transition: box-shadow 0.5s ease-in;
+}
+main.light div.country-sum:hover {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+main.dark div.country-sum:hover {
+	box-shadow: rgba(100, 100, 109, 0.1) 0px 4px 16px,
+		rgba(100, 100, 109, 0.1) 0px 8px 24px,
+		rgba(100, 100, 109, 0.1) 0px 16px 56px;
 }
 main.dark div.country-sum {
 	background-color: var(--comp_dark_color);
