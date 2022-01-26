@@ -199,6 +199,7 @@ div.form-wrapper {
 }
 div.countries-wrapper {
 	width: 100%;
+	min-height: 95vh;
 	margin-top: var(--pad_vert);
 	background-color: transparent;
 	display: flex;
