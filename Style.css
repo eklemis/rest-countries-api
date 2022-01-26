@@ -139,6 +139,7 @@ main {
 	background-color: #202d36;
 	padding: var(--pad_vert) var(--pad_hor_main_mob);
 	width: 100vw;
+	min-height: 95vh;
 }
 input {
 	width: 100%;
